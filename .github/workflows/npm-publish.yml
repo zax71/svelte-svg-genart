@@ -30,4 +30,5 @@ jobs:
 
       - run: pnpm i
       - run: pnpm run build --if-present
-      - run: pnpm publish --no-git-checks
+      - run: npm --version
+      - run: npm publish --no-git-checks
