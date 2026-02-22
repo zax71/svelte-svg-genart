@@ -116,9 +116,7 @@
 
 <style>
 	div {
-		resize: both;
-		overflow: hidden;
-		width: 504px;
-		height: 392px;
+		width: 100%;
+		height: 100%;
 	}
 </style>
