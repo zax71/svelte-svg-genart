@@ -90,7 +90,7 @@ function drawDots(
 	squareSize: number,
 	seededRandom: SeededRandom
 ) {
-	const group = draw.group().addClass('draw-6dots');
+	const group = draw.group().addClass('draw-dots');
 
 	const circleRadius = squareSize * 0.15;
 
@@ -113,7 +113,32 @@ function drawDots(
 	}
 }
 
+function drawRing(
+	draw: Svg,
+	foreground: string,
+	background: string,
+	x: number,
+	y: number,
+	squareSize: number,
+	seededRandom: SeededRandom
+) {
+	const group = draw.group().addClass('draw-ring');
+
+	const innerCircleRadius = squareSize * 0.55;
+	const outerCircleRadius = squareSize * 0.8;
+
+	group
+		.circle(outerCircleRadius)
+		.fill(foreground)
+		.move(x + (squareSize - outerCircleRadius) / 2, y + (squareSize - outerCircleRadius) / 2);
+
+	group
+		.circle(innerCircleRadius)
+		.fill(background)
+		.move(x + (squareSize - innerCircleRadius) / 2, y + (squareSize - innerCircleRadius) / 2);
+}
+
 function deg2rad(degrees: number): number {
 	return degrees * (Math.PI / 180);
 }
-export { drawCircle, drawSquare, drawPill, drawDots as draw6Dots };
+export { drawCircle, drawSquare, drawPill, drawDots, drawRing };
