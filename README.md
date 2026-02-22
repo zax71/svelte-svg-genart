@@ -23,3 +23,7 @@ Then add the following to your `+page.svelte`
 ## Dev instructions
 
 You can run the demo locally with `pnpm run dev`
+
+## Demo
+
+A live demo of the library can be found at https://svelte-svg-genart.pages.dev/
