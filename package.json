@@ -1,6 +1,6 @@
 {
 	"name": "svelte-svg-genart",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
