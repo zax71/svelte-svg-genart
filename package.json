@@ -55,5 +55,10 @@
 	},
 	"keywords": [
 		"svelte"
-	]
+	],
+	"dependencies": {
+		"@ctrl/tinycolor": "^4.2.0",
+		"@svgdotjs/svg.js": "^3.2.5",
+		"svelte-resize-observer-action": "^0.0.4"
+	}
 }

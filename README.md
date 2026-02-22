@@ -1,4 +1,18 @@
-# Svelte library
+# Svelte SVG Genart
+
+Easily create generative SVG art with Svelte. Highly inspired by [Creating Generative SVG Grids on Frontend Horse](https://frontend.horse/articles/generative-grids/).
+
+## Usage
+
+TODO
+
+## Dev instructions
+
+TODO
+
+## Demo
+
+TODO
 
 Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
 

@@ -1,1 +1,3 @@
-// Reexport your entry components here
+import Gengrid from "./gengrid.svelte";
+
+export { Gengrid }
