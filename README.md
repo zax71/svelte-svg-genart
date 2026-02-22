@@ -1,5 +1,8 @@
 # Svelte SVG Genart
 
+[![github](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_vector.svg)](https://github.com/zax71/svelte-svg-genart)
+[![npm](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/npm_vector.svg)](https://www.npmjs.com/package/svelte-svg-genart)
+
 Easily create generative SVG art with Svelte. Highly inspired by [Creating Generative SVG Grids on Frontend Horse](https://frontend.horse/articles/generative-grids/) although with new shapes & an algorithm to generate the grid dimensions
 
 ## Usage
