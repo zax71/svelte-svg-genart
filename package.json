@@ -1,6 +1,6 @@
 {
 	"name": "svelte-svg-genart",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
@@ -60,6 +60,8 @@
 	"dependencies": {
 		"@ctrl/tinycolor": "^4.2.0",
 		"@svgdotjs/svg.js": "^3.2.5",
-		"svelte-resize-observer-action": "^0.0.4"
+		"@tailwindcss/vite": "^4.2.0",
+		"svelte-resize-observer-action": "^0.0.4",
+		"tailwindcss": "^4.2.0"
 	}
 }
