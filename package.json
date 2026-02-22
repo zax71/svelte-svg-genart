@@ -1,7 +1,11 @@
 {
 	"name": "svelte-svg-genart",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zax71/svelte-svg-genart.git"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
