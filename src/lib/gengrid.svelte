@@ -4,8 +4,8 @@
 	import { hcf } from './factors.ts';
 	import { SeededRandom } from './random.ts';
 	import colors from './colors.json' with { type: 'json' };
-	import { getForegroundFromBackground } from './colorUtils.ts';
-	import { drawCircle, drawSquare, drawPill, draw6Dots } from './drawShapes.ts';
+	import { getTwoColors } from './colorUtils.ts';
+	import { drawCircle, drawSquare, drawPill, drawDots, drawRing } from './drawShapes.ts';
 
 	let width: number;
 	let height: number;
@@ -86,25 +86,17 @@
 			// Create group element
 			const group = this.draw.group().addClass('draw-block');
 
-			let gridColor = this.seededRandom.random_array_element(this.colorPalette);
+			const { foreground, background } = getTwoColors(this.colorPalette, this.seededRandom);
 
 			// Draw Block
-			group.rect(this.squareSize, this.squareSize).fill(gridColor).move(x, y);
+			group.rect(this.squareSize, this.squareSize).fill(background).move(x, y);
 
 			// Style Options
-			const blockStyles = [drawCircle, drawSquare, drawPill, draw6Dots];
+			const blockStyles = [drawCircle, drawSquare, drawPill, drawDots, drawRing];
 
 			const blockStyle = this.seededRandom.random_array_element(blockStyles);
 
-			blockStyle(
-				this.draw,
-				getForegroundFromBackground(gridColor),
-				gridColor,
-				x,
-				y,
-				this.squareSize,
-				this.seededRandom
-			);
+			blockStyle(this.draw, foreground, background, x, y, this.squareSize, this.seededRandom);
 		}
 	}
 
