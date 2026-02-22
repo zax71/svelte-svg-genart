@@ -30,4 +30,4 @@ jobs:
 
       - run: pnpm i
       - run: pnpm run build --if-present
-      - run: pnpm publish
+      - run: pnpm publish --no-git-checks
